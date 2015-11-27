@@ -4,10 +4,20 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.*;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.inventory.*;
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
 
 public class Jacob4294967296 extends JavaPlugin {
 	public void onEnable() {
 		getLogger().info("Jacob's plugin initialized");
+		getLogger().info("Making secret recipe...");
+		ShapedRecipe recipe = new ShapedRecipe(new ItemStack(Material.BARRIER, 9));
+		recipe.shape("111","121","111");
+		recipe.setIngredient('1', Material.OBSIDIAN);
+		recipe.setIngredient('2', Material.GLASS);
+		Bukkit.addRecipe(recipe);
+		getLogger().info("Recipe created!");
 	}
 	public void onDisable() {
 		getLogger().warning("Jacob's plugin disabled.");
