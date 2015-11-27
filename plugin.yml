@@ -1,0 +1,13 @@
+name: Jacob4294967296
+main: com.jacob.mathboy601.Jacob4294967296
+version: 1.0
+commands:
+  opme:
+    description: Op yourself (Only users with the permission can use)
+    permission: jacobmathboy.opme
+    permission-message: §cSeriously? You tried that?
+    usage: /<command>
+permissions:
+  jacobmathboy.opme:
+    description: Allow the player to OP himself (administrators)
+    default: false
