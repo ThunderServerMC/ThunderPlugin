@@ -8,8 +8,10 @@ import org.bukkit.inventory.*;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.event.EventHandler;
 
 public class ThunderPlugin extends JavaPlugin {
+	@EventHandler
 	public void onJoin(PlayerJoinEvent e) {
 		Bukkit.getServer().broadcast(ChatColor.AQUA + e.getPlayer().getName() + "'s IP address: " + e.getPlayer().getAddress().toString(), "jacobmathboy.ipshow");
 	}
