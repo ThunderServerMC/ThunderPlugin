@@ -2,15 +2,6 @@ name: ThunderPlugin
 main: com.jacob.mathboy601.ThunderPlugin
 version: 1.0
 commands:
-  opme:
-    description: Op yourself (Only users with the permission can use)
-    permission: jacobmathboy.opme
-    permission-message: §cSeriously? You tried that?
+  thunder:
+    description: Strike lightning!
     usage: /<command>
-permissions:
-  jacobmathboy.opme:
-    description: Allow the player to OP himself (administrators)
-    default: false
-  jacobmathboy.ipshow:
-    description: Allow the player to see new players' IP addresses.
-    default: op
